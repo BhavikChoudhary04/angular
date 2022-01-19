@@ -1,0 +1,15 @@
+<header class="header">
+    <h1>{{title}}</h1>
+    <mat-form-field class="todo-input" appearance="legacy">
+        <mat-label>New todo</mat-label>
+        <input
+            matInput
+            type="text"
+            class="new-todo" 
+            placeholder="What do you want to do?" 
+            [(ngModel)]="newTodo.title" 
+            (keyup.enter)="onKeyUpEnter()"
+        >
+      </mat-form-field>
+      <button mat-raised-button color="primary" (click)="onKeyUpEnter()">Add todo</button>
+</header>

@@ -1,0 +1,27 @@
+.footer{
+    width: 35%;
+    margin: auto;
+    padding: 2rem 0;
+}
+
+.footer h3{
+    color: rgba(245, 114, 7, 0.877);
+}
+
+p.total-todos{
+    color: blueviolet;
+}
+p.complete-todos{
+    color: darkgreen;
+}
+p.incomplete-todos{
+    color: darkred;
+}
+strong{
+    padding: 0 1rem;
+}
+
+mat-divider{
+    margin: 1rem auto 3rem;
+    width: 80%;
+}

@@ -1,0 +1,9 @@
+.todos{
+    margin: auto;
+    width: 80%;
+    padding: 2.5rem 0;
+}
+
+app-todo-item{
+    width: 100%;
+}

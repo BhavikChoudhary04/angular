@@ -1,0 +1,9 @@
+.header > h1{
+    font-size: 40px;
+    padding: 3rem;
+}
+
+mat-form-field{
+    margin: 0 3rem;
+    width: 40%;
+}

@@ -1,0 +1,10 @@
+<section class="todos">
+    <mat-list role="list" *ngIf="todos.length > 0; else noTodoBlock">
+        <mat-list-item role="listitem" *ngFor="let todo of todos;index as i">
+           <app-todo-item [todo]="todo" (iscompleted)="toggleIsComplete()" (tododetail)="getTodo($event)" (deletetodo)="deleteTodo($event)"></app-todo-item>
+        </mat-list-item>
+      </mat-list>
+    <ng-template #noTodoBlock>
+        <p>No todo exist. Create a new one using the form given below.</p>
+    </ng-template>
+</section>

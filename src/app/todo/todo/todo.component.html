@@ -1,0 +1,6 @@
+<section class="todoapp">
+    <app-todo-header [title]="title" [newTodo]="newTodo" (createTodo)="onCreateNewTodo()"></app-todo-header>
+    <app-todo-list [todos]="todos" (iscompleted)="toggleIsComplete()" (tododetail)="getTodo($event)" (deletetodo)="deleteTodo($event)"></app-todo-list>
+    <app-todo-footer [stats]="stats">
+    </app-todo-footer>
+</section>
